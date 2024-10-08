@@ -8,8 +8,9 @@
 
  ## Installation
 1. Clone the repository
-
+    ``` bash
     git clone https://github.com/mohitfulkar/frontendCaseStudy.git
+    ```
  
 2.  Install dependencies:
    ```bash
