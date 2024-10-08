@@ -6,7 +6,6 @@ import "../../components/style.css";
 const UpdateCard = ({ existingProfile }) => {
   const dispatch = useDispatch();
 
-  // Initialize form state with existing profile data
   const [profileDetails, setProfileDetails] = useState({
     id: existingProfile.id,
     name: "",
@@ -23,7 +22,6 @@ const UpdateCard = ({ existingProfile }) => {
     aboutMe: "",
   });
 
-  // Populate form with existing data
   useEffect(() => {
     if (existingProfile) {
       const {
@@ -56,13 +54,11 @@ const UpdateCard = ({ existingProfile }) => {
     }
   }, [existingProfile]);
 
-  // Handle input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setProfileDetails({ ...profileDetails, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     const updatedProfileData = {
@@ -86,7 +82,6 @@ const UpdateCard = ({ existingProfile }) => {
       },
     };
 
-    // Dispatch the updateProfile action
     dispatch(
       updateProfile({ id: profileDetails.id, updatedData: updatedProfileData })
     );

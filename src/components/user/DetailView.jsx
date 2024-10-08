@@ -15,18 +15,16 @@ const DetailView = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    dispatch(loadProfiles()); // Load profiles when the component mounts
+    dispatch(loadProfiles()); 
   }, [dispatch]);
   const [showMap, setShowMap] = useState(false);
-  const [animateMap, setAnimateMap] = useState(false); // To control the animation class
+  const [animateMap, setAnimateMap] = useState(false); 
 
   const handleSummaryClick = () => {
     if (showMap) {
-      // Hide the map
-      setAnimateMap(false); // Reset the animation
-      setTimeout(() => setShowMap(false), 300); // Wait for animation to complete before hiding map
+      setAnimateMap(false);
+      setTimeout(() => setShowMap(false), 300); 
     } else {
-      // Show the map with animation
       setShowMap(true);
       setAnimateMap(true);
     }

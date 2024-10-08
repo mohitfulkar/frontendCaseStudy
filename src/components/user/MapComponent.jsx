@@ -32,9 +32,7 @@ const MapComponent = ({ latitude, longitude }) => {
     setLoading(false);
   };
 
-  // Function to handle map click
   const handleMapClick = () => {
-    // Redirect to Google Maps with the clicked location
     window.open(
       `https://www.google.com/maps?q=${latitude},${longitude}`,
       "_blank"

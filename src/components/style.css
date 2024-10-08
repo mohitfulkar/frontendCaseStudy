@@ -56,7 +56,7 @@
     opacity: 0;
   }
   to {
-    transform: translateY(-20px); /* Adjust the upward distance */
+    transform: translateY(-20px);
     opacity: 1;
   }
 }
@@ -79,22 +79,22 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: 350px, 25rem 25rem, 25rem 25rem;
-  transform: rotate(-10deg); /* Adjust the duration and easing as needed */
+  transform: rotate(-10deg);
   height: 500px;
   width: 350px;
 }
 .poster-heading {
   float: right;
-  animation: slideIn 2s forwards; /* Animate the element */
+  animation: slideIn 2s forwards;
 }
 @keyframes slideIn {
   from {
-    transform: translateX(100%); /* Start from right outside the viewport */
-    opacity: 0; /* Start invisible */
+    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0); /* End at original position */
-    opacity: 1; /* Fade in */
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -288,18 +288,17 @@
 .oops-img {
   border-radius: 300px;
   opacity: 0;
-  transform: translateY(30px); /* Initial position */
+  transform: translateY(30px);
   animation: fadeSlideUp 1s ease-in-out forwards;
-
 }
 
 @keyframes fadeSlideUp {
   0% {
     opacity: 0;
-    transform: translateY(30px); /* Image starts 30px below its original position */
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Image ends in its final position */
+    transform: translateY(0);
   }
 }

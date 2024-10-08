@@ -7,7 +7,7 @@ const LowerUserNavbar = ({ setSearchTerm }) => {
   const handleSearchChange = (event) => {
     const value = event.target.value;
     setInputValue(value);
-    setSearchTerm(value); // Update the parent state with the search term
+    setSearchTerm(value); 
   };
 
   return (

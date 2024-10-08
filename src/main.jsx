@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store.js";
 
 const initializeLocalStorage = () => {
-  // Check if profiles already exist in localStorage
   const profiles = localStorage.getItem("profiles");
   if (!profiles) {
     console.log("Initializing localStorage with mockProfiles...");
@@ -16,10 +15,6 @@ const initializeLocalStorage = () => {
 
 initializeLocalStorage();
 
-// const handleUnload = () => {
-//   localStorage.removeItem("profiles");
-// };
-// window.addEventListener("beforeunload", handleUnload);
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
