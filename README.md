@@ -1,13 +1,29 @@
-# React + Vite
+# title
+ Profile Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Description
+ The application aims to provide an intuitive and
+ user-friendly way to navigate through profiles and visualise the geographic
+ locations associated with each individual.
 
-Currently, two official plugins are available:
+ ## Installation
+1. Clone the repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    git clone https://github.com/mohitfulkar/frontendCaseStudy.git
+ 
+2.  Install dependencies:
+   ```bash
+   npm install
+   ```
 
+3. Start the project:
+   ```bash
+   npm run dev  
+   ```
 
+## Features 
+- The user can navigate through diffferent profiles card
+- Interactive map integration with Google Maps API
+- Search and filter functionality
+- Profile management (view, update, delete) by admin.
 
-mohitfulkar
-6YAiw7DvszadkWLq
