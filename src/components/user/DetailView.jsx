@@ -15,15 +15,15 @@ const DetailView = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    dispatch(loadProfiles()); 
+    dispatch(loadProfiles());
   }, [dispatch]);
   const [showMap, setShowMap] = useState(false);
-  const [animateMap, setAnimateMap] = useState(false); 
+  const [animateMap, setAnimateMap] = useState(false);
 
   const handleSummaryClick = () => {
     if (showMap) {
       setAnimateMap(false);
-      setTimeout(() => setShowMap(false), 300); 
+      setTimeout(() => setShowMap(false), 300);
     } else {
       setShowMap(true);
       setAnimateMap(true);
