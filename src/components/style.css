@@ -86,7 +86,6 @@
 }
 
 .poster {
-  background-image: url("../images/poster.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 350px, 25rem 25rem, 25rem 25rem;
@@ -94,6 +93,21 @@
   height: 500px;
   width: 350px;
 }
+.poster img:hover {
+  animation: rotateIn 0.5s ease-in-out forwards;
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotateY(360deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
 .poster-heading {
   float: right;
   animation: slideIn 2s forwards;
