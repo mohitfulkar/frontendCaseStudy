@@ -7,14 +7,14 @@ const LowerUserNavbar = ({ setSearchTerm }) => {
   const handleSearchChange = (event) => {
     const value = event.target.value;
     setInputValue(value);
-    setSearchTerm(value); 
+    setSearchTerm(value);
   };
 
   return (
     <div className="h-12 bg-green-300">
       <div className="flex justify-center pt-2">
         <input
-          className="w-96 h-7 rounded-md p-2 text-sm"
+          className="w-full sm:w-72 md:w-96 h-7 rounded-md p-2 text-sm"
           type="text"
           placeholder="Search"
           value={inputValue}

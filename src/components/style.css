@@ -36,20 +36,31 @@
 
 .go-button {
   position: relative;
-
   color: #fff;
   background-color: #4caf50;
   border: none;
   border-radius: 25px;
+  padding: 10px 20px;
   box-shadow: 0 5px 0 #45a049;
-  transition: all 0.4s;
   outline: none;
+  cursor: pointer;
+  animation: float 1s ease-in-out infinite; /* Floating animation */
 }
 
-.go-button:hover {
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-30px); /* Move up by 10px at 50% */
+  }
+}
+
+/* .go-button:hover {
   background-color: #45a049;
-}
-
+} */
+/* 
 @keyframes move-up {
   from {
     transform: translateY(20);
@@ -59,7 +70,7 @@
     transform: translateY(-20px);
     opacity: 1;
   }
-}
+} */
 .swiper {
   background-color: #79da63;
 }
@@ -235,13 +246,14 @@
 @media (max-width: 640px) {
   .details {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .mapComponent {
+    animation: rotateMapIn 0.1s;
     height: 200px !important;
-    width: 100% !important; 
-    margin-top: 20px; 
+    width: 100% !important;
+    margin-top: 20px;
   }
 }
 

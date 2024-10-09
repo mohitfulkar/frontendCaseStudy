@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import { IoIosAddCircleOutline } from "react-icons/io";
 import "../../components/style.css";
 
 const AdminLowerUserNavbar = ({ setSearchTerm }) => {
@@ -10,7 +9,7 @@ const AdminLowerUserNavbar = ({ setSearchTerm }) => {
   const handleSearchChange = (event) => {
     const value = event.target.value;
     setInputValue(value);
-    setSearchTerm(value); 
+    setSearchTerm(value);
   };
 
   return (
@@ -18,7 +17,7 @@ const AdminLowerUserNavbar = ({ setSearchTerm }) => {
       <div className="flex justify-center items-center px-4 space-x-8">
         <div className="flex">
           <input
-            className="w-96 h-7 rounded-md p-2 text-sm"
+            className="w-full sm:w-72 md:w-96 h-7 rounded-md p-2 text-sm"
             type="text"
             placeholder="Search"
             value={inputValue}

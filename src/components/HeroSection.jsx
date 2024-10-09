@@ -25,8 +25,10 @@ const HeroSection = () => {
           </h1>
         </div>
         <div className="animate-move-up">
-          <button className="go-button h-16 w-32 text-2xl p-10 flex items-center animate-move-up">
-            <Link to="/user"><span className="">GO</span></Link>
+          <button className="go-button h-16 w-32 text-2xl p-10 flex items-center ">
+            <Link to="/user">
+              <span className="">GO</span>
+            </Link>
           </button>
         </div>
       </div>

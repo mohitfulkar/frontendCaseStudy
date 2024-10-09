@@ -2,13 +2,22 @@ import React, { useState, useEffect } from "react";
 import Map, { Marker, NavigationControl } from "react-map-gl";
 import { Room } from "@mui/icons-material";
 import ProgressSpinner from "../ProgressSpinner";
+import InvalidCoordinates from "../InvalidCoordinates";
 
 const MapComponent = ({ latitude, longitude }) => {
   if (latitude < -90 && latitude > 90) {
-    return <div>Invalid coodinates....</div>;
+    return (
+      <div>
+        <InvalidCoordinates />
+      </div>
+    );
   }
   if (longitude < -180 && latitude > 180) {
-    return <div>Invalid coodinates....</div>;
+    return (
+      <div>
+        <InvalidCoordinates />
+      </div>
+    );
   }
   const [viewPort, setViewPort] = useState({
     longitude: -70.9,
