@@ -231,6 +231,124 @@ let mockProfiles = [
       hobbies: ["Cycling", "Reading", "Traveling"],
     },
   },
+  {
+    id: 11,
+    name: "Jacinda Ardern",
+    description:
+      "Former Prime Minister of New Zealand, served from 2017 to 2023.",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg/330px-New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg",
+    contact: "jacinda.ardern@parliament.govt.nz",
+    interests: "Education, Mental Health, Climate Change",
+    socialMedia: {
+      linkedin: "https://www.linkedin.com/in/jacinda-ardern",
+      twitter: "https://twitter.com/jacindaardern",
+      github: "https://github.com/jacindaardern",
+    },
+    coordinates: {
+      latitude: -41.2865,
+      longitude: 174.7762,
+    },
+    location: "Parliament Buildings, Wellington, New Zealand",
+    aboutMe: {
+      text: "Committed to social equity and children's rights.",
+      hobbies: ["Reading", "Surfing", "Baking"],
+    },
+  },
+  {
+    id: 12,
+    name: "Boris Johnson",
+    description:
+      "Former Prime Minister of the United Kingdom, served from July 2019 to September 2022.",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/330px-Boris_Johnson_official_portrait_%28cropped%29.jpg",
+    contact: "boris.johnson@parliament.uk",
+    interests: "Brexit, Economy, Foreign Policy",
+    socialMedia: {
+      linkedin: "https://www.linkedin.com/in/borisjohnson",
+      twitter: "https://twitter.com/BorisJohnson",
+      github: "https://github.com/borisjohnson",
+    },
+    coordinates: {
+      latitude: 51.5074,
+      longitude: -0.1278,
+    },
+    location: "10 Downing Street, London, UK",
+    aboutMe: {
+      text: "Focus on delivering Brexit and enhancing the UK's global influence.",
+      hobbies: ["Cycling", "Writing", "History"],
+    },
+  },
+  {
+    id: 13,
+    name: "Volodymyr Zelenskyy",
+    description: "President of Ukraine, in office since May 2019.",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%2851939489510%29.jpg/330px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%2851939489510%29.jpg",
+    contact: "zelenskyy@president.gov.ua",
+    interests: "Peace, Democracy, Human Rights",
+    socialMedia: {
+      linkedin: "https://www.linkedin.com/in/zelenskyy",
+      twitter: "https://twitter.com/zelenskiy_official",
+      github: "https://github.com/zelenskyy",
+    },
+    coordinates: {
+      latitude: 50.4501,
+      longitude: 30.5234,
+    },
+    location: "Office of the President, Kyiv, Ukraine",
+    aboutMe: {
+      text: "Fighting for Ukraine's sovereignty and European integration.",
+      hobbies: ["Theater", "Cinema", "Sports"],
+    },
+  },
+  {
+    id: 14,
+    name: "Kim Jong-un",
+    description: "Supreme Leader of North Korea since December 2011.",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kim_Jong-un_April_2019_%28cropped%29.jpg/800px-Kim_Jong-un_April_2019_%28cropped%29.jpg",
+    contact: "kim.jongun@korea-dpr.com",
+    interests: "Nuclear Policy, Economy, National Security",
+    socialMedia: {
+      linkedin: "https://www.linkedin.com/in/kimjongun",
+      twitter: "https://twitter.com/kimjongun",
+      github: "https://github.com/kimjongun",
+    },
+    coordinates: {
+      latitude: 39.0392,
+      longitude: 125.7625,
+    },
+    location: "Pyongyang, North Korea",
+    aboutMe: {
+      text: "Focused on the advancement of North Korea and its defense capabilities.",
+      hobbies: ["Basketball", "Skiing", "Music"],
+    },
+  },
+  {
+    id: 14,
+    name: "Vladimir Putin",
+    description:
+      "President of Russia, serving since May 2012 (and previously from 2000 to 2008).",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f3/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29.jpg",
+    contact: "vladimir.putin@gov.ru",
+    interests: "Geopolitics, Energy Policy, National Security",
+    socialMedia: {
+      linkedin: "https://www.linkedin.com/in/vladimirputin",
+      twitter: "https://twitter.com/vladimirputin",
+      github: "https://github.com/vladimirputin",
+    },
+    coordinates: {
+      latitude: 55.7558,
+      longitude: 37.6173,
+    },
+    location: "Moscow, Russia",
+    aboutMe: {
+      text: "Dedicated to strengthening Russia's position on the global stage.",
+      hobbies: ["Judo", "Hiking", "Ice Hockey"],
+    },
+  },
 ];
 
 export default mockProfiles;
