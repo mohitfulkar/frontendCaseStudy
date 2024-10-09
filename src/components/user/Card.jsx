@@ -15,7 +15,7 @@ const Card = ({ profiles }) => {
               <img
                 src={profile.photo}
                 alt={profile.name}
-                className="card-img h-24 w-24 ml-12 mb-6"
+                className="card-img  object-cover h-24 w-24 ml-12 mb-6"
               />
               <label className="font-bold">{profile.name}</label>
               <p className="mb-8">{profile.description}</p>

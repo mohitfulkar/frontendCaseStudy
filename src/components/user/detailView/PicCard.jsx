@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const PicCard = ({ profile }) => {
   return (
     <div className="pic-card h-screen p-4 text-center bg-green-600 rounded-lg">
-      <img src={profile.photo} alt="" className="ml-12 h-48 w-48 mb-8" />
+      <img src={profile.photo} alt="" className="ml-12 h-48 w-48 mb-8  object-cover" />
       <div className="pic-name mt-12 ">
         <span className="text-3xl">Hello! I am {profile.name}</span>
         <p className="mt-4 text-md">{profile.description}</p>
