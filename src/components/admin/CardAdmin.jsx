@@ -17,7 +17,7 @@ const CardAdmin = ({ profiles }) => {
               <img
                 src={profile.photo}
                 alt={profile.name}
-                className="card-img h-24 w-24 ml-12 mb-6"
+                className="card-img h-24 w-24 ml-12 mb-6 object-cover"
               />
               <label className="font-bold">{profile.name}</label>
               <p className="mb-4">{profile.description}</p>

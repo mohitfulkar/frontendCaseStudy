@@ -48,7 +48,7 @@ const DetailView = () => {
                 showMap ? "space-x-4" : ""
               }`}
             >
-              <div className="flex space-x-4">
+              <div className="flex flex-col md:flex-row space-x-0 md:space-x-4">
                 <PicCard profile={profile} />
                 <AboutMe
                   profile={profile}

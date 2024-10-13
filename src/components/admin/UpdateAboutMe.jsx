@@ -2,13 +2,16 @@ import React from "react";
 import "../../components/style.css";
 import { useDispatch } from "react-redux";
 import { deleteProfile } from "../../redux/features/adminSlices";
+import { useNavigate } from "react-router-dom";
 
 const UpdateAboutMe = ({ profile, onUpdateClick }) => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this profile?")) {
       dispatch(deleteProfile(id));
+      navigate("/admin");
     }
   };
   return (
@@ -34,10 +37,7 @@ const UpdateAboutMe = ({ profile, onUpdateClick }) => {
         </p>
 
         <div className=" flex justify-center items-center space-x-3">
-          <button
-            className="sum-btn  "
-            onClick={onUpdateClick}
-          >
+          <button className="sum-btn  " onClick={onUpdateClick}>
             Update
           </button>
           <button

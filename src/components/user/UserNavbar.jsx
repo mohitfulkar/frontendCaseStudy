@@ -48,19 +48,19 @@ const UserNavbar = ({ profile }) => {
         {isOpen && (
           <div className="navbar-services absolute z-10 top-16 left-0 w-full bg-green-500 text-white flex flex-col items-center space-y-4 py-4 md:hidden">
             <Link to="#" onClick={toggleMenu}>
-              My Guide
+            MY GUIDE
             </Link>
             <Link to="#" onClick={toggleMenu}>
-              Services
+            SERVICES
             </Link>
             <Link to="#" onClick={toggleMenu}>
-              Products
+            PRODUCTS
             </Link>
             <Link to="#" onClick={toggleMenu}>
-              Education
+            EDUCATION
             </Link>
             <Link to="#" onClick={toggleMenu}>
-              About
+            ABOUT
             </Link>
 
             <span className="">
